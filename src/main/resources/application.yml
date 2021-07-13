@@ -1,0 +1,15 @@
+
+spring:
+  application:
+    name: cards
+  profiles:
+    active: production
+
+
+info:
+  app:
+    name: "Card"
+    version: "0.0.1"
+    profile: ${spring.profiles.active}
+  serverInfo:
+    port: ${server.port}
